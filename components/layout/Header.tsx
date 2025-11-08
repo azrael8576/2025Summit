@@ -21,6 +21,7 @@ export default function Header() {
     { href: "/agenda", label: "議程資訊" },
     { href: "/transportation", label: "交通資訊" },
     { href: "/speakers", label: "講者資訊" },
+    { href: "/groups", label: "組別資訊" },
   ];
   
   return (

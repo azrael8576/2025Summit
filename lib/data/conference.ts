@@ -274,6 +274,60 @@ export const AGENDA_DATA: Session[] = [
   },
 ]
 
+// 組別資料
+export interface Group {
+  name: string
+  contact: string
+  summary: string
+  responsibilities: string[]
+}
+
+export const GROUPS_DATA: Group[] = [
+  {
+    name: '報到組',
+    contact: 'Kim',
+    summary: '負責參會者的報到流程與現場支援，確保所有參會者能順利完成報到並即時處理現場問題。',
+    responsibilities: [
+      '身份核實與報到確認',
+      '發放會議資料袋與識別證',
+      '統計報到數據並回報',
+      '處理現場報到問題與諮詢',
+    ],
+  },
+  {
+    name: '引導組',
+    contact: '姍姍',
+    summary: '協助參會者導引、維護會場秩序並處理緊急狀況，確保現場安全與動線順暢。',
+    responsibilities: [
+      '會場導引與座位安排',
+      '會場秩序維護與人流控制',
+      '緊急疏散與安全引導',
+      '協助講者與專家接待',
+    ],
+  },
+  {
+    name: '技術組',
+    contact: '魚咬章',
+    summary: '負責活動現場的所有技術支援與設備維護，確保音響、投影及網路運作順暢。',
+    responsibilities: [
+      '音響與麥克風設備管理',
+      '投影與簡報系統支援',
+      '網路環境與 Wi-Fi 維護',
+    ],
+  },
+  {
+    name: '場地組',
+    contact: 'Peter',
+    summary: '負責會場佈置、物料管理與環境維護，確保整體後勤支援完善、場地整潔有序。',
+    responsibilities: [
+      '會場佈置與座位配置',
+      '物料準備與庫存管理',
+      '餐飲服務協調與監督',
+      '現場清潔與垃圾分類',
+    ],
+  },
+]
+
 // 統計數據
 export const CONFERENCE_STATISTICS = {
   PARTICIPANTS: '100+',
